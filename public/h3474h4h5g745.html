@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        // window.location.href = "https://google.com";
+    </script>
+    
+    <style>
+    /* Full page reset */
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    /* Center everything */
+    .loader-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: #0f172a; /* dark background */
+    }
+
+    /* Spinner */
+    .loader {
+        width: 60px;
+        height: 60px;
+        border: 6px solid rgba(255, 255, 255, 0.2);
+        border-top: 6px solid #38bdf8; /* highlight color */
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        to {
+        transform: rotate(360deg);
+        }
+    }
+    </style>
+</head>
+<body>
+  <!-- <p>Redirecting…</p> -->
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+</body>
+</html>
